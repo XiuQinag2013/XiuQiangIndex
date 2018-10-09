@@ -134,6 +134,34 @@
                 </ul>
             </section>
            -->
+
+
+            <div class="stack info-unit">
+                <h2><i class="fa fa-code" aria-hidden="true"></i>技术栈</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>前端:</label>
+                        <span>HTML、CSS、JS</span>
+                    </li>
+                    <li>
+                        <label>后端:</label>
+                        <span>Spring、SpringMVC、Hibernate、Struts</span>
+                    </li>
+                    <li>
+                        <label>数据库:</label>
+                        <span>Oracle、MySQL</span>
+                    </li>
+                    <li>
+                        <label>其他:</label>
+                        <span>JAVA基础</span>
+                    </li>
+                    <li>
+                        <label>了解:</label>
+                        <span>Dubbo、ZooKeeper、Redis、ActiveMQ、MongoDB、Jekins、Bootstrap、ECharts、Sonar</span>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="main">
@@ -153,29 +181,6 @@
                 </ul>
             </section>
 
-            <div class="stack info-unit">
-                <h2><i class="fa fa-code" aria-hidden="true"></i>技术栈</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>前端:</label>
-                        <span>HTML、CSS、Bootstrap、ECharts、ExtJS</span>
-                    </li>
-                    <li>
-                        <label>后端:</label>
-                        <span>Spring、SpringMVC、Dubbo、ZooKeeper、Redis、ActiveMQ、Hibernate、Struts</span>
-                    </li>
-                    <li>
-                        <label>数据库:</label>
-                        <span>Oracle、MySQL、MongoDB</span>
-                    </li>
-                    <li>
-                        <label>其他:</label>
-                        <span>SVN、Jekins、Ant、Maven、Git、Sonar</span>
-                    </li>
-                </ul>
-            </div>
-
             <!-- 工作经历 -->
             <section class="work info-unit">
                 <h2>
@@ -188,8 +193,13 @@
                             <time>2016.11 - 至今</time>
                         </h3>
                         <ul class="info-content">
-                            <li>我任职网新恩普软件有限公司研发部框架组。该部门主要负责公司框架(云Odin)的开发与维护。<br/>
-                                云Odin项目使用dubbo、zookeeper做服务化,redis做数据字典的缓存，使用ActiveMQ做消息队列，使用jekins部署。</li>
+                            <li>我任职网新恩普软件有限公司研发部框架组。我们组主要负责公司Loki框架与云Loki2.0的开发与维护。</li>
+                        </ul>
+                        <ul class="info-content">
+                            <li>Loki框架的核心源代码打成JAR包后被提供给全国各地的项目组下载使用，项目组的同事在Loki框架上进行业务代码的开发。</li>
+                        </ul>
+                        <ul class="info-content">
+                            <li>云Loki2.0采用前后端分离架构，将Loki框架解耦，拆分为前后端两个项目。云Loki2.0使用Dubbo、ZooKeeper做服务化,Redis做缓存，ActiveMQ做消息队列，Jekins一键发布。</li>
                         </ul>
                     </li>
                 </ul>
@@ -203,36 +213,64 @@
                 <ul>
                     <li>
                         <h3>
-                            <span>[项目1]Odin云2.0改造</span>
-                            <time>2018.6-2018.10</time>
-                        </h3>
-                        <ul class="info-content">
-                            <li>技术栈：Dubbo+ZooKeeper+SSH</li>
-                            <li>
-                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>使用Dubbo+ZooKeeper做服务化，将传统SSH项目前后端分离
-                                <br/>
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                                我在该项目中负责将odin框架的模块的改造并迁移到云odin2.0。
-                                <br/>
-                               </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>[项目2]在线编译平台维护</span>
+                            <span>[项目1]在线编译平台维护</span>
                             <time>2017.9-2018.10</time>
                         </h3>
                         <ul class="info-content">
                             <li>技术栈：SSH+Oracle</li>
                             <li>
-                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>使用ant拉取SVN源代码，使用jdt编译成war包，并加入自定义配置文件，控制项目部署的环境(ip、中间件、操作系统)。
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [介绍]该项目使用Ant脚本从SVN上指定目录获取源代码、编译、导出war包提供下载。并在编译阶段，加入自定义配置文件，对应用的发布环境(ip、中间件、操作系统)进行控制。项目内采用线程池和ReentrantLock重入锁来控制并发操作。
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]独自
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                我单独负责该平台的日常维护与新功能开发。
+                                [职责]我负责该平台的日常维护与新功能开发。
                                 <br/>
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]代码质量管理平台SonarQube</span>
+                            <time>2018.7-2018.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：SonarQube</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [介绍]Sonar是一个用于代码质量管理的开源平台，用于管理源代码的质量。Sonar自带很多JAVA代码规范。
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]与另一位同事
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [职责]我负责代码规则配置并基于现有规则进行二次开发。
+                                <br/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]Odin云2.0改造</span>
+                            <time>2018.6-2018.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：SSH+Dubbo+ZooKeeper+Oracle/MongoDB</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>[介绍]将耦合度较高的Loki框架解耦，拆分成前后端2个项目。提高服务器的负载能力，为后面的架构升级做准备。
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]框架组
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [职责]我在该项目中负责将Loki框架的模块的改造并迁移到云Loki2.0。
+                                <br/>
+                               </li>
+                        </ul>
+                    </li>
+
                     <!--
                     <li>
                         <h3>
@@ -265,35 +303,12 @@
                 </ul>
             </section>
 
-            <div class="stack info-unit">
-                <h2><i class="fa fa-code" aria-hidden="true"></i>技术栈</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>前端</label>
-                        <span>HTML、CSS、Bootstrap、ECharts、ExtJS</span>
-                    </li>
-                    <li>
-                        <label>后端</label>
-                        <span>Spring、SpringMVC、Dubbo、ZooKeeper、Redis、ActiveMQ、Hibernate、Struts</span>
-                    </li>
-                    <li>
-                        <label>数据库</label>
-                        <span>Oracle、MySQL、MongoDB</span>
-                    </li>
-                    <li>
-                        <label>其他</label>
-                        <span>SVN、Jekins、Ant、Maven、Git、Sonar</span>
-                    </li>
-                </ul>
-            </div>
-
             <!-- 自我评价 -->
             <section class="work info-unit">
                 <h2>
                     <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
                 <hr/>
-                <p>目前就职于传统软件行业，想要打破原有开发模式。对于个人职业发展，我希望把精力放在java基础，设计模式，jvm原理，spring+springmvc原理及源码，linux，mysql事务隔离与锁机制，mongodb，http/tcp，多线程，分布式架构（dubbo，dubbox，spring cloud），弹性计算架构，微服务架构（springboot+zookeeper+docker+jenkins），java性能优化等内容上。做一个纯java后端。</p>
+                <p>我希望把精力放在java基础，设计模式，jvm原理，spring+springmvc原理及源码，linux，mysql事务隔离与锁机制，mongodb，http/tcp，多线程，分布式架构（dubbo，dubbox，spring cloud），弹性计算架构，微服务架构（springboot+zookeeper+docker+jenkins），java性能优化等内容上。</p>
             </section>
         </section>
     </article>
