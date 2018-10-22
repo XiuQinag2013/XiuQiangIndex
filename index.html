@@ -47,7 +47,12 @@
                         <span></span>
                     </div>
                     <!-- 头像照片 -->
+                   <!-- 证件照
                     <img class="avatar" style="width:118px; height:127px;" src="assets/images/lixqzj.jpg" onload="loading()">
+                   -->
+
+                    <!-- 日常生活照片 -->
+                    <img class="avatar" src="assets/images/lixq.jpg" onload="loading()">
                 </section>
 
                 <h1 class="name">李秀强</h1>
@@ -83,8 +88,8 @@
                 <hr/>
                 <ul>
                     <li>
-                        <label>WeChat</label>
-                        <a>Lixiuqiangdewechat</a>
+                        <label>手机</label>
+                        <a>18805819821</a>
                     </li>
                     <li>
                         <label>Email</label>
@@ -150,7 +155,7 @@
                     </li>
                     <li>
                         <label>其他:</label>
-                        <span>JAVA基础、Linux常用命令</span>
+                        <span>JVM、JMM、集合框架、garbage collection、Linux常用命令</span>
                     </li>
 
                 </ul>
@@ -186,14 +191,16 @@
                             <time>2016.11 - 至今</time>
                         </h3>
                         <ul class="info-content">
-                            <li>网新恩普是行业领先的人力资源和社会保障信息服务商。我任职网新恩普软件有限公司研发部框架组。我们组主要负责公司Loki框架与云Loki2.0的开发与维护。</li>
+                        <li>网新恩普是行业领先的人力资源和社会保障信息服务商。我任职网新恩普软件有限公司研发部框架组。我主要负责公司核心框架的二次开发与日常维护。</li>
                         </ul>
+                        <!--
                         <ul class="info-content">
                             <li>Loki框架的核心源代码打成JAR包后被提供给全国各地的社保项目组下载使用，项目组的同事在Loki框架上进行社保业务代码的开发。</li>
                         </ul>
                         <ul class="info-content">
                             <li>云Loki2.0采用前后端分离架构，将Loki框架解耦，拆分为前后端两个项目。云Loki2.0使用Dubbo、ZooKeeper实现服务化,Redis做缓存，ActiveMQ做消息队列，Jekins一键发布。</li>
                         </ul>
+                        -->
                     </li>
                 </ul>
             </section>
@@ -207,49 +214,49 @@
                     <li>
                         <h3>
                             <span>[项目1]在线编译平台开发</span>
-                            <time>2017.9-2018.10</time>
+                            <time>2017.9-2017.11</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：SSH+Oracle</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [项目描述]该平台用于对项目组代码进行版本控制与生产环境的控制。该项目使用Ant脚本从SVN上指定目录获取源代码、编译、导出war包提供下载。并在编译阶段，加入自定义配置文件，对应用的发布环境(ip、中间件、操作系统)进行控制。项目内采用线程池和ReentrantLock重入锁来控制并发操作。
+                                [项目描述]该平台用于对项目组代码进行版本和生产环境的控制。项目中使用Ant脚本来下载SVN上指定目录源代码并进行编译。在编译阶段，加入自定义配置文件，对应用的发布环境(ip、中间件、操作系统)进行控制。Apache Ant，是一个将软件编译、测试、部署等步骤联系在一起加以自动化的一个工具。
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [职责]我经历了项目从需求评审到测试部署的过程；负责该平台的功能开发与维护。
+                                [职责]我经历了项目从需求评审到开发再到测试部署的整个流程。我负责后台模块的开发与Ant脚本的编写，在项目上线以后负责该项目的更新迭代与维护。
                                 <br/>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <h3>
-                            <span>[项目2]代码质量管理平台SonarQube</span>
-                            <time>2018.7-2018.10</time>
+                            <span>[项目2]SonarQube安装部署集成</span>
+                            <time>2017.12-2018.2</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：SonarQube</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [项目描述]Sonar是一个用于代码质量管理的开源平台，用于管理源代码的质量。该平台用于codereview之前，进行快速定位代码中潜在的或者明显的错误，以减轻codereview的工作量。
+                                [项目描述]Sonar是一个用于代码质量管理的开源平台，用于管理源代码的质量。该平台用于codereview之前，对代码进行扫描，快速定位代码中潜在的或者明显的错误，以减轻codereview的工作量。
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [职责]我负责代码规则配置并基于现有规则进行二次开发。
+                                [职责]我负责SonarQube安装部署并与在线编译平台集成，包括生产服务器的申请，安装配置CentOS6.5、Sonarqube5.6、Mysql。在线编译平台通过HTTP请求来调用Sonarqube的接口对SVN上指定目录的源代码进行扫描分析，并生成分析报告。同时还负责Sonarqube的代码规则的配置与二次开发。
                                 <br/>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <h3>
-                            <span>[项目3]Loki云2.0改造</span>
-                            <time>2017.6-2017.11</time>
+                            <span>[项目3]核心框架二次开发与日常维护</span>
+                            <time>2018.3-至今</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：SSH+Dubbo+ZooKeeper+Oracle/MongoDB</li>
                             <li>
-                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>[项目描述]将耦合度较高的业务框架解耦，拆分成前后端2个项目，进行服务化改造。提高服务器的负载能力。
+                                <!-- 将耦合度较高的业务框架解耦，拆分成前后端2个项目，进行服务化改造。提高服务器的负载能力。 -->
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>[项目描述]公司核心框架进行封装以后会提供给各地项目组的同事进行业务模块的开发。我负责远程解决项目组同事碰到的框架BUG。同时参与框架性能的优化与功能点开发。
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [职责]我在该项目中负责模块改造与迁移。
+                                [功能点开发]使用jQuery UI+Bootstrap+echarts+SSH实现一个流量监控功能。其中，使用jQuery UI实现模块可拖拽、bootstrap-panel生成面板、bootstrap-table生成表格、echarts将数据展示为图表，通过ajax与后台交互。诸如此类。<br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [性能优化]使用redis将常用表加载到缓存中，加快查询速度。
                                 <br/>
                                </li>
                         </ul>
@@ -292,7 +299,7 @@
                 <h2>
                     <i class="fa fa-pencil" aria-hidden="true"></i>自我评价</h2>
                 <hr/>
-                <p>英语水平CET4级，会阅读官方文档，自学能力强。坚持每周健身2-4次。为人乐观，积极向上，团队协作能力强。铲屎官。</p>
+                <p>能通过阅读英文文献、使用开源工具独立来完成上级分配的任务。有良好的编码习惯。坚持每周健身2-4次。为人乐观，积极向上，团队协作能力强。铲屎官。</p>
             </section>
         </section>
     </article>
